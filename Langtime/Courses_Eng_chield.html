@@ -17,7 +17,7 @@
 
 <body>
     <div class="wrapper">
-<!--        <?php include 'include/header/header.php'; ?>-->
+       <?php include 'include/header/header.php'; ?>
         <!------------------------Первый блок----------------------->
         <div class="Starter">
             <div class="container">
@@ -150,7 +150,7 @@
 
         <!--   END HIDDENT FORM   -->
         <!--ФУУУУУУУУУУУУУУУУУУУУУУУУУУУУУУТТТТТТТТТТТТЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕЕР-->
-<!--        <?php include 'include/footer/footer.php'; ?>-->
+       <?php include 'include/footer/footer.php'; ?>
     </div>
     <!--<script src="anchor.js"></script>-->
     <script src="lib/js/app.js"></script>
