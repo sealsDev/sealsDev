@@ -1,0 +1,465 @@
+<!--
+<?php 
+	header("Content-type: text/html; charset=utf-8");
+	error_reporting(-1);
+	require_once "func.php";
+	require_once "connect.php";
+
+	if(!empty($_POST)){
+		save_data();
+		header("Location: {$_SERVER['PHP_SELF']}");
+		exit;
+	}
+ ?>
+-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Школа иностранных языков langtime</title>
+    <link rel="stylesheet" href="Myproject.css">
+    <link rel="stylesheet" href="adaptation.css">
+    <link rel="stylesheet" href="lib/flickity/flickity.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+    <script src="lib/flickity/flickity.pkgd.min.js"></script>
+
+    <link href="lib/jQueryFormStyler-master/dist/jquery.formstyler.css" rel="stylesheet" />
+    <link href="lib/jQueryFormStyler-master/dist/jquery.formstyler.theme.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/5f91e8f041.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width,  height=device-height, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="lib/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
+    <script>
+        (function($) {
+            $(function() {
+                $('input, select').styler({
+                    selectSearch: true,
+                });
+            });
+        })(jQuery);
+    </script>
+</head>
+
+<body>
+    <div class="langtime__main">
+        <header>
+            <div class="header__inner">
+                <div class="header__logo"><a href="Myproject.html" style="text-decoration: none; color: #404040;">langtime</a></div>
+                <nav class="header__menu">
+                    <ul class="topmenu">
+                        <li><a class="header__link">Курсы</a>
+                            <ul class="submenu">
+                                <li><a class="header__link" href="">Немецкий</a></li>
+                                <li><a class="header__link" href="">Французкий</a></li>
+                                <li><a class="header__link" href="">Украинский</a></li>
+                                <li><a class="header__link sub_eng">Английский</a>
+                                    <ul class="submenu__eng">
+                                        <li><a class="header__link" href="Courses_Eng_teenager.html">Взрослый</a></li>
+                                        <li><a class="header__link" href="Courses_Eng_chield.html">Детский</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li><a class="header__link" href="#w33">О нас</a></li>
+                        <li><a class="header__link" href="#miracle">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__link__phone"><a href="tel:+380674974066" style="text-decoration: none;
+            color: #424242;">+38(067)497-40-66</a></div>
+        </header>
+        <div class="main-lock" id="menu">
+
+
+<!--
+            <script>
+                $("window").load(function() {
+                    $("body").removeAttr("id");
+                });
+            </script>
+            
+            window.onload(function {
+    document.body.removeAttribute('id');
+});
+-->
+            <div class="crow">
+                <h2 class="crow__title">Мы – это новая, современная школа иностранных языков.</h2>
+            </div>
+            <div class="absolute__fix">
+                <div class="b-ff-cross-header__right">
+                    <button class="b-ff-cross-header__button b-ff-cross-header__button_blue go-to-order-form" type="button">
+                        <a style="color: white; text-decoration: none;" href="#forms__php">Оставить заявку</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+        <!--
+        <div class="words">
+            <div class="Home">
+                <h4>Home</h4>
+            </div>
+            <div class="Family">
+                <h4>Family</h4>
+            </div>
+            <div class="Support">
+                <h4>Support</h4>
+            </div>
+            <div class="Sincerity">
+                <h4>Sincerity</h4>
+            </div>
+            <div class="Loyalty">
+                <h4>Loyalty</h4>
+            </div>
+            <div class="Friendship">
+                <h4>Friendship</h4>
+                
+            </div>
+        </div>
+-->
+        <div class="Courses">
+            <div class="courses__language__item">
+                <div class="courses__language english">
+                    <div class="b-ff-cross-div2__text">
+                        <b>Взрослым</b>
+                        вы изучали английский в школе/ВУЗе, но мало что помните?<br> <br>Или, возможно, не изучали
+                        вовсе?<br>
+                        <br> Не проблема. Мы поможем Вам как <br> освоить язык с нуля, так и заполнить существующие
+                        пробелы.<br><br>Большой упор делается на развитие Speaking Skills и восприятие речи на слух.
+                        <div class="shortcuts">
+                            <img src="image/america.png" height="90px" width="90px" id="cours_anchor">
+                        </div>
+                        <!--
+                        <div class="words">
+                            <div class="Success">
+                                <h4>Success</h4>
+                            </div>
+                        </div>
+-->
+                    </div>
+                </div>
+
+
+                <div class="courses__language deutsch">
+                    <div class="b-ff-cross-div2__text">
+                        Владение немецким - неотъемлемая составляющая Вашей работы/залог карьерного роста?<br><br> Или
+                        планируете сдавать ВНО?<br><br> Или же просто хотите знать что-либо <br>еще, кроме
+                        "verstehe/nicht verstehe", "Hallo", "Guten Tag", "Auf wiedersehen"? <br><br>Тогда Вы обратились
+                        по адресу!
+                        <div class="shortcuts">
+                            <img src="image/germany.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="courses__language__item">
+
+                <div class="courses__language ukraine">
+                    <div class="b-ff-cross-div2__text">
+                        Вы понимаете, что Ваших знаний, к сожалению, недостаточно для успешной сдачи ДПА?<br><br>Или же
+                        язык необходим для работы?<br><br>Наши преподаватели с радостью помогут<br>Вам в этом! <br><br>А
+                        самые сложные правила наши педагоки объяснят так, что у Вас не останется ни малейших вопросов!
+                        <div class="shortcuts__left">
+                            <img src="image/ukraine.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="courses__language BHO">
+                    <div class="b-ff-cross-div2__text">
+                        Французский – красивый, мелодичный язык – часто называют «языком любви».<br>Вы тоже всегда
+                        мечтали освоить этот<br><br>прекраснейший язык, но все <br>откладывали? <b>Сейчас самое
+                            время!</b> <br><br>Наши преподаватели помогут поставить Вам правильное произношение,
+                        расскажут об отличительных чертах французского языка.
+
+                        <div class="shortcuts__left">
+                            <img src=" image/french.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="DAA">
+            <div class="Develop__Advance__Achieve">
+                <h2> Develop. Advance. Achieve.</h2>
+            </div>
+        </div>
+        <div class="About__Us">
+
+            <!--            <div class="words">-->
+            <!--            </div>-->
+            <!------------------SLIDER-------------------------------------->
+            <!--
+            <div class="words">
+                <div class="Cohesion" id="w33">
+                    <h4>Cohesion</h4>
+                </div>
+                <div class="Ambition">
+                    <h4>Ambition</h4>
+                </div>
+            </div>
+-->
+            <div class="slide--parent">
+                <div class="parent--el">
+                    <a id="first-link"></a>
+                    <div class="two--col">
+                        <div class="is-item has--img">
+                            <figure class="the-img">
+                                <img src="image/IMG_9432.JPG" alt="">
+                            </figure>
+                        </div>
+                        <div class="is-item has--content">
+                            <div class="is-item--inner">
+                                <h1><span>Докаленко Алена Александровна</span></h1>
+                                <small>Руководитель, преподаватель английского языка, украинского языка и
+                                    литературы</small>
+                                <hr>
+                                <p>Алёна Александровна - преподаватель, который относится к каждому ребёнку, как к
+                                    своему.
+                                    Она никогда не останется в стороне, если увидит, что человеку нужна помощь.
+                                    Педагог умеет сделать самые сложные вещи простыми. </p>
+                                <p>Она не обременяет студентов непонятными правилами и терминами, её объяснения всегда
+                                    лаконичны и красочны,
+                                    а примеры - жизненны, благодаря чему материал усваивается в разы легче. </p>
+                                <p>Студенты любят преподавателя не только за профессионализм, но ещё и за её чуткость:
+                                    каждый ученик нашей школы знает, что с любой проблемой он может обратиться к Алёне
+                                    Александровне - она всегда выслушает,
+                                    поддержит и поможет!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="parent--el">
+                    <div class="two--col">
+                        <div class="is-item has--img">
+                            <figure class="the-img">
+                                <img src="image/IMG_9430.JPG" alt="">
+                            </figure>
+                        </div>
+                        <div class="is-item has--content">
+                            <div class="is-item--inner">
+                                <h1><span>Воронюк Ксения Викторовна</span></h1>
+                                <small>Преподаватель английского и немецкого языков</small>
+                                <hr>
+                                <p>Ксения Викторовна - человек-эмоция, её искренностью и самоотдачей восхищаются все:
+                                    детки чувствуют тепло и доброту, которые исходят от нее, и с радостью бегут на
+                                    занятия.</p>
+                                <p>Подростки знают о её способности разглядеть в каждом из них индивидуальность и
+                                    прилагают все усилия, дабы оправдать ожидания Ксении Викторовны.</p>
+                                <p>Преподаватель находится в постоянном поиске новых идей и подходов к обучению, что
+                                    позволяет сделать каждое занятие максимально эффективным!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parent--el">
+                    <div class="two--col">
+                        <div class="is-item has--img">
+                            <figure class="the-img">
+                                <img src="image/IMG_9428.JPG" alt="">
+                            </figure>
+                        </div>
+                        <div class="is-item has--content">
+                            <div class="is-item--inner">
+                                <h1><span>Мельник Элианна Витальевна</span></h1>
+                                <small>Преподаватель английского языка</small>
+                                <hr>
+                                <p>Элианна Витальевна - педагог, который сочитает в себе любовь к детям, языку и
+                                    творчеству. С ней Вы узнаете, насколько неординарным может быть процесс обучения,
+                                    сколько возможностей практиковать язык ежедневно у Вас есть! </p>
+                                <p>Преподаватель на собственном примере покажет и докажет, что изучение английского -
+                                    это стиль жизни, это воронка, которая затягивает раз и навсегда! </p>
+                                <p>Элианна Витальевна поможет создать прекрасную базу для дальнейшего изучения языка,
+                                    поставить конкретную цель( к примеру, владение языком на уровне В2) и достичь её!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parent--el">
+                    <div class="two--col">
+                        <div class="is-item has--img">
+                            <figure class="the-img">
+                                <img src="image/IMG_9431.JPG" alt="">
+                            </figure>
+                        </div>
+                        <div class="is-item has--content">
+                            <div class="is-item--inner">
+                                <h1><span>Докаленко Анастасия Александровна</span></h1>
+                                <small>Преподаватель английского и украинского языков</small>
+                                <hr>
+                                <p>Анастасия Александровна обладает уникальной способностью найти подход как к малышам,
+                                    так и к подросткам. Она умеет и посмеяться вместе со студентами, и наругать, когда
+                                    это необходимо. </p>
+                                <p>Благодаря постоянному профессиональному развитию преподавателя, её уроки всегда
+                                    динамичны и разнообразны. Для педагога не существует фраз "не могу" и "у меня не
+                                    получится". </p>
+                                <p>Анастасия Александровна поможет каждому студенту поверить в себя и свои силы, научит
+                                    не сдаваться ни при каких трудностях; именно с ней Вы раскроете свой потенциал!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="parent--el">
+                    <div class="two--col">
+                       <div class="is-item has--img">
+                            <figure class="the-img">
+                                <img src="image/IMG_2145.JPG" alt="">
+                            </figure>
+                        </div>
+                        <div class="is-item has--content">
+                            <div class="is-item--inner">
+                                <h1><span>Василькова Александра Игоревна</span></h1>
+                                <small>Преподаватель украинского языка и литературы, английского языка</small>
+                                <hr>
+                                <p>Имея 6-летний опыт преподавания за плечами, Александра Игоревна чувствует все
+                                    потребности студентов до мельчайших деталей. </p>
+                                <p>Она знает, как сделать процесс обучения наиболее продуктивным и достичь максимальных
+                                    результатов в кратчайшие сроки. Целевая аудитория педагога - подростки и взрослые.
+                                </p>
+                                <p>Благодаря собственному опыту и множеству пройденных треннингов Александра Игоревна
+                                    успешно готовит студентов к сдаче ВНО и международных экзаменов. Она умеет выделять
+                                    главное и учит этому своих подопечных !</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="words">
+                <div class="unity" id="unity">
+                    <h4>unity</h4>
+                </div>
+                <div class="Warmth">
+                    <h4>Warmth</h4>
+                </div>
+            </div>
+-->
+            <!-----------------END-SLIDER-------------------------------------->
+            <div class="timetable" id="miracle">
+                <div class="map">
+                    <div id="map">
+                    </div>
+                </div>
+                <div class="timetable_langtime">
+                    <div class="qew">
+                        <p>График работы Langtime: </p>
+                        <p> - Понедельник-Суббота с 9:00 до 21:00<br>
+                            - Воскресенье выходной</p>
+                        <p> Главный офис находиться по адресу: улица <br><br>
+                            Левитана, 141, Одесса, Одесская область</p>
+                        <p> Номер по которому мы всегда можете нам позвонить - <br> <a href="tel:+380674974066" style="color:#272727; text-decoration:none;">+380 67 497 40 66</a><br>
+                            <br><br>
+                            <br>
+                            <br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-----------------FORMS-------------------------------------->
+        <!--
+        <div class="words">
+            <div class="unity">
+                <h4>Leadership</h4>
+            </div>
+            <div class="Warmth">
+                <h4>Warmth</h4>
+            </div>
+        </div>
+-->
+        <div class="forms__php">
+            <div class="php_sending">
+                <form method="post" id="forms__php">
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required>
+                        <label for="name" class="label-name">
+                            <span class="content-name">name</span>
+                        </label>
+                    </div>
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required>
+                        <label for="name" class="label-name">
+                            <span class="content-name">Surname</span>
+                        </label>
+                    </div>
+
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required>
+                        <label for="name" class="label-name">
+                            <span class="content-name">phone</span>
+                        </label>
+                    </div>
+                    <div class="form">
+                        <input type="text" name="name" autocomplete="off" required>
+                        <label for="name" class="label-name">
+                            <span class="content-name">email</span>
+                        </label>
+                    </div>
+                    <p style="display: flex;
+                       justify-content: center;">
+                        <select name="select_lang" class="width-200" required>
+                            <option> Выберите предмет</option>
+                            <option>Английский</option>
+                            <option>Немецкий</option>
+                            <option>Украинский</option>
+                        </select>
+                    </p>
+                    <button type="submit" class="b-ff-cross-header__button b-ff-cross-header__button_blue go-to-order-form">Отправить
+                        заявку</button>
+                </form>
+            </div>
+        </div>
+
+        <!----------------END-----FORMS-------------------------------------->
+        <div class="b2b">
+            <div id="back-top">
+                <i class="fa fa-angle-up" aria-hidden="true" href="#" onclick="return up()"></i>
+            </div>
+        </div>
+        <div class="BigBen">
+            <img src="image/бигБен-ленгColor.png" height="200px" width="200px">
+        </div>
+        <footer class="footer_Active">
+            <div class="footer-main-container">
+                <div class="footer-container">
+                    <div class="social-langtime">
+                        <div class="Contact_About">
+                            <h3> Контакты</h3>
+                            <h3> Курсы</h3>
+                            <h3> О нас</h3>
+                        </div>
+                        <div class="location">
+                            <h3> Одесса, улица Левитана, 141</h3>
+                            <h3> Есть к нам вопросы ? <br> -<a href="tel:+380674974066" style="color:white; text-decoration:none;"> +380 67 497 40 66 </a></h3>
+                            <h3> Понедельник-Суббота <br> с 9:00 до 21:00</h3>
+                        </div>
+                        <div class="License">
+                            <h3> Лицензия</h3>
+                            <h3> Сертификаты</h3>
+                            <h3> Пройти онлайн тест</h3>
+                        </div>
+                        <div class="icons">
+                            <a href="https://www.instagram.com/langtimeod/" style="color: white; text-decoration: none;"> <i class="fab fa-instagram"></i></a>
+                            <a href="https://m.facebook.com/langtimeod/" style="color: white; text-decoration: none;"><i class=" fab fa-facebook" ></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<!--        <?php include 'footer/footer.php'; ?>-->
+        <script src="lib/js/map.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATgF7xPpaEiWd3Qwx9aZt8NoasKWu58r4&callback=initMap"></script>
+        <script src="lib/js/anchor.js"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+        <script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script>
+        <script src="lib/js/slider.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="stylesheet" href="main.css">
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <svg class="filter" version="1.1">
+  <defs>
+    <filter id="gooeyness">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="8" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooey" />
+      <feComposite in="SourceGraphic" in2="gooey" operator="atop" />
+    </filter>
+  </defs>
+</svg>
+<div class="radios-boxes">
+  <div class="radios">
+    <input type="radio" name="radio" id="radio1" class="radio" value="r">
+    <input type="radio" name="radio" id="radio2" class="radio" value="k">
+    <input type="radio" name="radio" id="radio3" class="radio" value="t">
+    <input type="radio" name="radio" id="radio4" class="radio" value="s">
+    <div class="ball"></div>
+  </div>
+  <div class="labels">
+    <label for="radio1" class="label">radio</label>
+    <label for="radio2" class="label">killed</label>
+    <label for="radio3" class="label">the video</label>
+    <label for="radio4" class="label">star</label>
+  </div>
+</div>
+<script>
+    let radios = document.querySelectorAll('.radio');
+let labels = document.querySelectorAll('.label');
+let ball = document.querySelector('.ball');
+let prevRadio, prevLabel;
+radios.forEach((radio, index) => {
+  radio.addEventListener('click', function(e) {
+    if (prevRadio) prevRadio.classList.toggle('active');
+    if (prevLabel) prevLabel.classList.toggle('active');
+    radio.classList.toggle('active');
+    prevRadio = radio;
+    labels[index].classList.toggle('active');
+    prevLabel = labels[index];
+    ball.className = `ball pos${index}`;
+  });
+});
+    </script>
+</body>
+</html>
