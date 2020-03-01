@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="borger.css">
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="burger-menu">
+
+        <svg class="ham hamRotate ham8 ada burger-menu__botton" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top " d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path class="line middle " d="m 30,50 h 40" />
+            <path class="line bottom " d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+
+
+
+        <nav class="burger-menu__nav">
+            <ul class="burger-topmenu">
+                <li><a href="" class="burger-menu__link">О нас</a></li>
+                <li><a href="" class="burger-menu__link">Контакты</a></li>
+                <li>
+                    <label for="hider" style="cursor: pointer; position: relative; width: 100%;">
+                        <a class="arrow-icon">
+                            <span class="left-bar"></span>
+                            <span class="right-bar"></span>
+                        </a>
+                        <a class="burger-menu__link" id="gfdas">Курсы
+                        </a>
+
+                    </label>
+                    <input type="checkbox" id="hider">
+
+                    <ul class="burger-submenu clas burger-menu__hidden__link" id="hgfks">
+                        <li><a class="burger-menu__link_sub" href="">Немецкий</a></li>
+                        <li><a class="burger-menu__link_sub" href="">Французкий</a></li>
+                        <li><a class="burger-menu__link_sub" href="">Украинский</a></li>
+                        <li>
+
+                            <label for="hider2" style="cursor: pointer;position: relative;width: 100%;">
+                                <a class="arrow-icon2">
+                                    <span class="left-bar2"></span>
+                                    <span class="right-bar2"></span>
+                                </a>
+                                <a class="burger-menu__link_sub" id="cadad">Английский </a>
+                            </label>
+                            <input type="checkbox" id="hider2">
+
+
+                            <ul class="burger-submenu_eng adw burger-menu__hidden" id="faadf">
+                                <li><a class="burger-menu__link_sub" href="Courses_Eng_teenager.html">Взрослый</a></li>
+                                <li><a class="burger-menu__link_sub" href="Courses_Eng_chield.html">Детский</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="burger-menu__overlay"></div>
+    </div>
+
+    <section id="1">Секция 1
+    </section>
+
+    <script src="borger.js"></script>
+</body>
+
+</html>

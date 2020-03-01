@@ -1,0 +1,354 @@
+@font-face {
+    font-family: 'Gilroy-ExtraBold';
+    src: url(../../fonts/Gilroy-ExtraBold/10871.otf);
+}
+
+.ada {
+    position: fixed;
+    z-index: 10000;
+}
+
+.ham {
+    cursor: pointer;
+    transition: transform 400m;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: #000;
+    stroke-width: 5.5;
+    stroke-linecap: round;
+}
+
+
+
+.ham8 .top {
+    stroke-dasharray: 40 160;
+}
+
+.ham8 .middle {
+    stroke-dasharray: 40 142;
+    transform-origin: 50%;
+    transition: transform 400ms;
+}
+
+.ham8 .bottom {
+    stroke-dasharray: 40 85;
+    transform-origin: 50%;
+    transition: transform 400ms, stroke-dashoffset 400ms;
+}
+
+.ham8.active .top {
+    stroke-dashoffset: -64px;
+    stroke: #fff;
+}
+
+.ham8.active .middle {
+    //stroke-dashoffset: -20px;
+    transform: rotate(90deg);
+    stroke: #fff;
+}
+
+.ham8.active .bottom {
+    stroke-dashoffset: -64px;
+    stroke: #fff;
+}
+
+.burger-menu {
+/*    display: none;*/
+}
+
+.burger-menu__nav {
+    padding-top: 80px;
+    position: fixed;
+    z-index: 20;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    background-color: #2a2a2a;
+    overflow-y: auto;
+    left: -100%;
+    transition: 0.5s;
+    user-select: none;
+}
+
+.burger-menu_active .burger-menu__nav {
+    left: 0;
+}
+
+.burger-menu__link {
+    padding: 30px 30px 30px 0;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 28px;
+    text-decoration: uppercase;
+    letter-spacing: 5px;
+    font-weight: bold;
+    line-height: 60px;
+    color: #fff;
+}
+
+.burger-menu__link:hover {
+    filter: brightness(0.7);
+}
+
+/*БУРГЕР НА СТИЛЕ*/
+.burger-topmenu {
+    list-style-type: none;
+}
+
+
+.burger-menu__link_sub {
+
+    font-family: sans-serif;
+    text-decoration: none;
+    position: relative;
+    font-size: 17px;
+    right: 25%;
+    text-decoration: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #fff;
+}
+
+.burger-submenu {
+    font-family: sans-serif;
+    list-style-type: none;
+    padding-left: 60px;
+
+}
+
+
+.burger-submenu_eng {
+    font-family: sans-serif;
+    list-style-type: none;
+    position: relative;
+    right: 30%;
+    padding-left: 60px;
+}
+
+.burger-topmenu li a:hover {
+    color: dodgerblue;
+}
+
+.burger-menu__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+}
+
+.burger-menu_active .burger-menu__overlay {
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.burger-menu__hidden {
+    transform: scaleY(0) !important;
+}
+
+.burger-menu__hidden__link {
+    transform: scaleY(0) !important;
+}
+
+
+#hider {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+
+}
+
+.clas {
+    transform: scaleY(1);
+    transform-origin: 0 0;
+    transition: opacity .2s ease-out,
+        transform .2s ease-out !important;
+}
+
+#hider2 {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
+
+.adw {
+    transform: scaleY(1);
+    transform-origin: 0 0;
+    transition: opacity .2s ease-out,
+        transform .2s ease-out !important;
+}
+
+
+
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: sans-serif;
+    font-size: 72px;
+}
+
+
+
+.arrow-icon {
+    background-color: dodgerblue;
+    display: block;
+    /* padding: 0.5em; */
+    /* margin: 1em auto; */
+    position: absolute;
+    cursor: default;
+    left: 90%;
+    bottom: 70%;
+    border-radius: 4px;
+}
+
+.left-bar {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0px;
+    width: 17px;
+    height: 4px;
+    display: block;
+    transform: rotate(35deg);
+    float: right;
+    border-radius: 2px;
+}
+
+.left-bar:after {
+    content: "";
+    background-color: dodgerblue;
+    width: 17px;
+    height: 3px;
+    display: block;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+
+.right-bar {
+    position: absolute;
+    background-color: transparent;
+    top: 0px;
+    left: 13px;
+    width: 17px;
+    height: 4px;
+    display: block;
+    transform: rotate(-35deg);
+    float: right;
+    border-radius: 2px;
+}
+
+.right-bar:after {
+    content: "";
+    background-color: dodgerblue;
+    width: 17px;
+    height: 3px;
+    display: block;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+
+.arrow-icon2 {
+    background-color: dodgerblue;
+    display: block;
+    /* padding: 0.5em; */
+    /* margin: 1em auto; */
+    position: absolute;
+    cursor: pointer;
+    left: 75%;
+    bottom: 50%;
+    border-radius: 4px;
+}
+
+.left-bar2 {
+    position: absolute;
+    background-color: transparent;
+    top: 0;
+    left: 0px;
+    width: 15px;
+    height: 2px;
+    display: block;
+    transform: rotate(35deg);
+    float: right;
+    border-radius: 2px;
+}
+
+.left-bar2:after {
+    content: "";
+    background-color: dodgerblue;
+    width: 10px;
+    height: 2px;
+    display: block;
+    float: right;
+    border-radius: 6px 10px 10px 6px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+
+.right-bar2 {
+    position: absolute;
+    background-color: transparent;
+    top: 3px;
+    left: 7px;
+    width: 15px;
+    height: 2px;
+    display: block;
+    transform: rotate(-35deg);
+    float: right;
+    border-radius: 2px;
+}
+
+.right-bar2:after {
+    content: "";
+    background-color: dodgerblue;
+    width: 10px;
+    height: 2px;
+    display: block;
+    float: right;
+    border-radius: 10px 6px 6px 10px;
+    transition: all 0.5s cubic-bezier(0.25, 1.7, 0.35, 0.8);
+    z-index: -1;
+}
+
+.open .left-bar:after {
+    transform-origin: center center;
+    transform: rotate(-70deg);
+}
+
+.open .right-bar:after {
+    transform-origin: center center;
+    transform: rotate(70deg);
+}
+
+.open .left-bar2:after {
+    transform-origin: center center;
+    transform: rotate(-70deg);
+}
+
+.open .right-bar2:after {
+    transform-origin: center center;
+    transform: rotate(70deg);
+}

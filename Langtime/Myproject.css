@@ -34,13 +34,13 @@ header {
 
 .header__inner {
     display: flex;
-    
+
 }
 
 .header__logo {
     font-family: 'Gilroy-ExtraBold';
     letter-spacing: 1px;
-    color:#424242;
+    color: #424242;
     font-size: 35px;
     margin: 16px 0 0 40px;
 
@@ -97,7 +97,7 @@ header {
 }
 
 .topmenu li a:hover {
-        color: dodgerblue;
+    color: dodgerblue;
 }
 
 .submenu {
@@ -108,7 +108,7 @@ header {
     z-index: 5;
     width: 125px;
     border-radius: 3px 3px 0px 3px;
-    
+
     opacity: 0;
     transform: scaleY(0);
 
@@ -246,11 +246,11 @@ header {
 
 .simplePage .b-ff-cross-header__button {
     color: #fff;
-    border: 1px solid #fff
+    border: 1px solid #fff;
 }
 
 .b-ff-cross-header__button:hover {
-    opacity: .7
+    opacity: .7;
 }
 
 
@@ -275,12 +275,12 @@ header {
     font-size: 22px;
     line-height: 36px;
     color: #242d34;
-    text-decoration: none
+    text-decoration: none;
 }
 
 .b-ff-cross-header__menu__link:hover {
     text-decoration: none;
-    opacity: .7
+    opacity: .7;
 }
 
 .crow {
@@ -332,7 +332,7 @@ header {
     background-size: 150px 140px;
     margin-bottom: 60px;
     z-index: 14;
-     
+
 }
 
 .courses__language.deutsch {
@@ -357,6 +357,7 @@ header {
 .courses__language__item {
     margin: 0 30px;
 }
+
 /*-------------------------shortcuts---------------------*/
 
 .shortcuts {
@@ -634,7 +635,7 @@ p {
     margin-left: auto;
     justify-content: center;
     margin-right: auto;
-
+    margin-top: 50px;
 }
 
 .form {
@@ -910,8 +911,6 @@ footer {
     width: 15%;
 }
 
-
-
 .icons {
     margin-left: 100px;
     font-size: 40px;
@@ -919,8 +918,12 @@ footer {
     color: white;
 }
 
+#adaptation__new {
+    display: none;
+}
+
 .fa-facebook {
-        margin-left: 20px;
-    }
+    margin-left: 20px;
+}
 
 /*-------------------END-FOOTER--------------------------------------*/

@@ -19,11 +19,13 @@
     <title>Школа иностранных языков langtime</title>
     <link rel="stylesheet" href="Myproject.css">
     <link rel="stylesheet" href="adaptation.css">
+    <link rel="stylesheet" href="/include/burger/borger.css">
     <link rel="stylesheet" href="lib/flickity/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
 
     <script src="lib/flickity/flickity.pkgd.min.js"></script>
-
+    
+    
     <link href="lib/jQueryFormStyler-master/dist/jquery.formstyler.css" rel="stylesheet" />
     <link href="lib/jQueryFormStyler-master/dist/jquery.formstyler.theme.css" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/5f91e8f041.js" crossorigin="anonymous"></script>
@@ -69,11 +71,73 @@
             </div>
             <div class="header__link__phone"><a href="tel:+380674974066" style="text-decoration: none;
             color: #424242;">+38(067)497-40-66</a></div>
+            
+            
+            
         </header>
-        <div class="main-lock" id="menu">
+        
+        
+        <!--             MOBILE BURGER MENU                  -->
+
+<div class="burger-menu">
+
+        <svg class="ham hamRotate ham8 ada burger-menu__botton" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top " d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+            <path class="line middle " d="m 30,50 h 40" />
+            <path class="line bottom " d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
 
 
-<!--
+
+        <nav class="burger-menu__nav">
+            <ul class="burger-topmenu">
+                <li><a href="" class="burger-menu__link">О нас</a></li>
+                <li><a href="" class="burger-menu__link">Контакты</a></li>
+                <li>
+                    <label for="hider" style="cursor: pointer; position: relative; width: 100%;">
+                        <a class="arrow-icon">
+                            <span class="left-bar"></span>
+                            <span class="right-bar"></span>
+                        </a>
+                        <a class="burger-menu__link" id="gfdas">Курсы
+                        </a>
+
+                    </label>
+
+                    <ul class="burger-submenu clas burger-menu__hidden__link" id="hgfks">
+                        <li><a class="burger-menu__link_sub" href="">Немецкий</a></li>
+                        <li><a class="burger-menu__link_sub" href="">Французкий</a></li>
+                        <li><a class="burger-menu__link_sub" href="">Украинский</a></li>
+                        <li>
+
+                            <label for="hider2" style="cursor: pointer;position: relative;width: 100%;">
+                                <a class="arrow-icon2">
+                                    <span class="left-bar2"></span>
+                                    <span class="right-bar2"></span>
+                                </a>
+                                <a class="burger-menu__link_sub" id="cadad">Английский </a>
+                            </label>
+
+                            <ul class="burger-submenu_eng adw burger-menu__hidden" id="faadf">
+                                <li><a class="burger-menu__link_sub" href="Courses_Eng_teenager.html">Взрослый</a></li>
+                                <li><a class="burger-menu__link_sub" href="Courses_Eng_chield.html">Детский</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </nav>
+        <div class="burger-menu__overlay"></div>
+    </div>
+
+<!--             MOBILE BURGER MENU                  -->
+        
+    
+        <div class="main-lock">
+
+
+            <!--
             <script>
                 $("window").load(function() {
                     $("body").removeAttr("id");
@@ -96,30 +160,9 @@
             </div>
 
         </div>
-        <!--
-        <div class="words">
-            <div class="Home">
-                <h4>Home</h4>
-            </div>
-            <div class="Family">
-                <h4>Family</h4>
-            </div>
-            <div class="Support">
-                <h4>Support</h4>
-            </div>
-            <div class="Sincerity">
-                <h4>Sincerity</h4>
-            </div>
-            <div class="Loyalty">
-                <h4>Loyalty</h4>
-            </div>
-            <div class="Friendship">
-                <h4>Friendship</h4>
-                
-            </div>
-        </div>
--->
+
         <div class="Courses">
+
             <div class="courses__language__item">
                 <div class="courses__language english">
                     <div class="b-ff-cross-div2__text">
@@ -131,16 +174,8 @@
                         <div class="shortcuts">
                             <img src="image/america.png" height="90px" width="90px" id="cours_anchor">
                         </div>
-                        <!--
-                        <div class="words">
-                            <div class="Success">
-                                <h4>Success</h4>
-                            </div>
-                        </div>
--->
                     </div>
                 </div>
-
 
                 <div class="courses__language deutsch">
                     <div class="b-ff-cross-div2__text">
@@ -154,7 +189,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="courses__language__item">
 
@@ -181,29 +215,22 @@
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
+
         <div class="DAA">
             <div class="Develop__Advance__Achieve">
                 <h2> Develop. Advance. Achieve.</h2>
             </div>
         </div>
+
         <div class="About__Us">
 
-            <!--            <div class="words">-->
-            <!--            </div>-->
             <!------------------SLIDER-------------------------------------->
-            <!--
-            <div class="words">
-                <div class="Cohesion" id="w33">
-                    <h4>Cohesion</h4>
-                </div>
-                <div class="Ambition">
-                    <h4>Ambition</h4>
-                </div>
-            </div>
--->
+
             <div class="slide--parent">
+
                 <div class="parent--el">
                     <a id="first-link"></a>
                     <div class="two--col">
@@ -257,6 +284,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="parent--el">
                     <div class="two--col">
                         <div class="is-item has--img">
@@ -281,6 +309,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="parent--el">
                     <div class="two--col">
                         <div class="is-item has--img">
@@ -305,9 +334,10 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="parent--el">
                     <div class="two--col">
-                       <div class="is-item has--img">
+                        <div class="is-item has--img">
                             <figure class="the-img">
                                 <img src="image/IMG_2145.JPG" alt="">
                             </figure>
@@ -329,18 +359,11 @@
                         </div>
                     </div>
                 </div>
+
             </div>
-            <!--
-            <div class="words">
-                <div class="unity" id="unity">
-                    <h4>unity</h4>
-                </div>
-                <div class="Warmth">
-                    <h4>Warmth</h4>
-                </div>
-            </div>
--->
+
             <!-----------------END-SLIDER-------------------------------------->
+
             <div class="timetable" id="miracle">
                 <div class="map">
                     <div id="map">
@@ -353,35 +376,26 @@
                             - Воскресенье выходной</p>
                         <p> Главный офис находиться по адресу: улица <br><br>
                             Левитана, 141, Одесса, Одесская область</p>
-                        <p> Номер по которому мы всегда можете нам позвонить - <br> <a href="tel:+380674974066" style="color:#272727; text-decoration:none;">+380 67 497 40 66</a><br>
-                            <br><br>
-                            <br>
-                            <br>
+                        <p> Номер по которому мы всегда можете нам позвонить - <br> <a href="tel:+380674974066" style="color:#272727; text-decoration:none;">+380 67 497 40 66</a>
                         </p>
                     </div>
                 </div>
             </div>
         </div>
+
         <!-----------------FORMS-------------------------------------->
-        <!--
-        <div class="words">
-            <div class="unity">
-                <h4>Leadership</h4>
-            </div>
-            <div class="Warmth">
-                <h4>Warmth</h4>
-            </div>
-        </div>
--->
+
         <div class="forms__php">
             <div class="php_sending">
                 <form method="post" id="forms__php">
+
                     <div class="form">
                         <input type="text" name="name" autocomplete="off" required>
                         <label for="name" class="label-name">
                             <span class="content-name">name</span>
                         </label>
                     </div>
+
                     <div class="form">
                         <input type="text" name="name" autocomplete="off" required>
                         <label for="name" class="label-name">
@@ -395,12 +409,14 @@
                             <span class="content-name">phone</span>
                         </label>
                     </div>
+
                     <div class="form">
                         <input type="text" name="name" autocomplete="off" required>
                         <label for="name" class="label-name">
                             <span class="content-name">email</span>
                         </label>
                     </div>
+
                     <p style="display: flex;
                        justify-content: center;">
                         <select name="select_lang" class="width-200" required>
@@ -410,55 +426,70 @@
                             <option>Украинский</option>
                         </select>
                     </p>
+
                     <button type="submit" class="b-ff-cross-header__button b-ff-cross-header__button_blue go-to-order-form">Отправить
                         заявку</button>
+
                 </form>
             </div>
         </div>
 
         <!----------------END-----FORMS-------------------------------------->
+
         <div class="b2b">
             <div id="back-top">
                 <i class="fa fa-angle-up" aria-hidden="true" href="#" onclick="return up()"></i>
             </div>
         </div>
+
         <div class="BigBen">
             <img src="image/бигБен-ленгColor.png" height="200px" width="200px">
         </div>
+
         <footer class="footer_Active">
             <div class="footer-main-container">
                 <div class="footer-container">
                     <div class="social-langtime">
+
                         <div class="Contact_About">
                             <h3> Контакты</h3>
                             <h3> Курсы</h3>
                             <h3> О нас</h3>
                         </div>
+
                         <div class="location">
                             <h3> Одесса, улица Левитана, 141</h3>
                             <h3> Есть к нам вопросы ? <br> -<a href="tel:+380674974066" style="color:white; text-decoration:none;"> +380 67 497 40 66 </a></h3>
                             <h3> Понедельник-Суббота <br> с 9:00 до 21:00</h3>
                         </div>
+
                         <div class="License">
                             <h3> Лицензия</h3>
                             <h3> Сертификаты</h3>
                             <h3> Пройти онлайн тест</h3>
+                            <div class="icons" id="adaptation__new">
+                                <a href="https://www.instagram.com/langtimeod/" style="color: white; text-decoration: none;"> <i class="fab fa-instagram"></i></a>
+                                <a href="https://m.facebook.com/langtimeod/" style="color: white; text-decoration: none;"><i class=" fab fa-facebook"></i></a>
+                            </div>
                         </div>
-                        <div class="icons">
+
+                        <div class="icons" id="adaptation__old">
                             <a href="https://www.instagram.com/langtimeod/" style="color: white; text-decoration: none;"> <i class="fab fa-instagram"></i></a>
-                            <a href="https://m.facebook.com/langtimeod/" style="color: white; text-decoration: none;"><i class=" fab fa-facebook" ></i></a>
+                            <a href="https://m.facebook.com/langtimeod/" style="color: white; text-decoration: none;"><i class=" fab fa-facebook"></i></a>
                         </div>
+
                     </div>
                 </div>
             </div>
         </footer>
-<!--        <?php include 'footer/footer.php'; ?>-->
+        <!--        <?php include 'footer/footer.php'; ?>-->
         <script src="lib/js/map.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATgF7xPpaEiWd3Qwx9aZt8NoasKWu58r4&callback=initMap"></script>
         <script src="lib/js/anchor.js"></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
         <script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script>
         <script src="lib/js/slider.js"></script>
+        <script src="lib/js/borger.js"></script>
     </div>
 </body>
 
