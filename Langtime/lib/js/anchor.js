@@ -13,6 +13,6 @@
        
         $('html, body').animate({
           scrollTop: $($(this).attr('href')).offset().top
-        }, 1300, 'linear');
+        }, 300, 'linear');
       });
 });
