@@ -396,7 +396,7 @@
     }
 
     #back-top {
-        bottom: 125px;
+        bottom: 50px;
     }
 }
 
@@ -602,10 +602,6 @@
 }
 
 @media (max-width: 400px) {
-    #back-top {
-        bottom: 100px;
-    }
-
     .Develop__Advance__Achieve {
         font-size: 17px;
     }
