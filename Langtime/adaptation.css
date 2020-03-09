@@ -28,6 +28,10 @@
     .footer_Active h3 {
         font-size: 13px;
     }
+    
+    .mfp-bg {
+        width: 105% !important;
+    }
 }
 
 @media all and (max-width: 1280px) {
@@ -62,6 +66,35 @@
 }
 
 @media all and (max-width: 1120px) {
+
+    .eq {
+        width: 380px;
+    }
+
+    .IMG_US {
+        width: 380px;
+    }
+
+    .Surname {
+        margin-right: 200px;
+    }
+
+
+    .patronymic {
+        margin-left: 280px;
+    }
+
+
+
+    .Surname_2 {
+        margin-left: 220px;
+    }
+
+
+    .patronymic_2 {
+        margin-right: 280px;
+    }
+    
     .shortcuts img {
         height: 70px;
         width: 70px;
@@ -130,9 +163,96 @@
     .location {
         margin-left: 60px;
     }
+
+    .qew {
+        margin-right: -60px;
+    }
+}
+
+@media all and (max-width: 1090px) {
+
+    .IMG_TEXT {
+        font-size: 19px;
+    }
+
+    .Surname {
+        margin-right: 170px;
+    }
+
+
+    .patronymic {
+        margin-left: 230px;
+    }
+
+
+
+    .Surname_2 {
+        margin-left: 170px;
+
+    }
+
+
+    .patronymic_2 {
+        margin-right: 230px;
+    }
+
+
+
 }
 
 @media (max-width: 1019px) {
+    .wrap-information {
+        padding-left: 0;
+    }
+
+    .intro-courses {
+        text-align: center;
+    }
+
+    .main-information_item_1 {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 75%;
+        max-width: 80%;
+    }
+
+    .btn {
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -45%;
+        position: absolute;
+    }
+
+    .container {
+        position: relative;
+        max-width: 800px;
+    }
+
+    .Starter {
+        margin-top: 400px;
+    }
+
+    .Starter:first-child {
+        margin-top: 0;
+    }
+
+    .intro_item_2 {
+        margin: 0 auto;
+    }
+
+    .main-information_item_2 {
+        right: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 75%;
+        max-width: 80%;
+        margin-top: 0;
+    }
+
+    .intro-crs {
+        max-width: 100%;
+    }
+
     #back-top {
         width: 35px;
         height: 35px;
@@ -208,24 +328,22 @@
     .License {
         margin-left: 40px;
     }
+
+
 }
 
 @media all and (max-width: 970px) {
-    
-    .slide--parent {
-        display: none;
-    }
 
     .burger-menu {
         display: block !important;
     }
-    
+
     .ham {
         position: absolute;
         top: -6px;
         left: 0;
     }
-    
+
     header {
         display: block;
         width: 100%;
@@ -279,8 +397,35 @@
     }
 }
 
+@media all and (max-width: 905px) {
+    .text h1 {
+        font-size: 25px;
+    }
+
+    .Surname {
+        margin-right: 0px;
+    }
+
+    .patronymic {
+        margin-left: 0px;
+    }
+
+    .Surname_2 {
+        margin-left: 0px;
+    }
+
+    .patronymic_2 {
+        margin-right: 0px;
+    }
+
+}
+
 @media all and (max-width: 850px) {
 
+    .IMG_TEXT {
+        font-size: 18px;
+    }
+    
     .courses__language {
         max-width: 260px;
         font-size: 13px;
@@ -303,7 +448,33 @@
     }
 }
 
+@media all and (max-width: 775px) {
+
+    .text p {
+        font-size: 17.5px !important;
+    }
+
+    .text h1 {
+        font-size: 22px;
+
+    }
+}
+
+@media (max-width: 765px) {
+    .eq {
+        width: 360px;
+    }
+
+    .IMG_US {
+        width: 360px;
+    }
+}
+
 @media all and (max-width: 760px) {
+    .btn {
+        bottom: -55%
+    }
+
     .Courses {
         flex-wrap: wrap;
     }
@@ -371,6 +542,61 @@
     }
 }
 
+@media all and (max-width: 755px) {
+
+    .IMG_TEXT {
+        font-size: 16px;
+    }
+
+}
+
+@media all and (max-width: 745px) {
+
+    .text p {
+        font-size: 17px !important;
+    }
+}
+
+@media all and (max-width: 725px) {
+
+    .text p {
+        font-size: 16.6px !important;
+    }
+}
+
+
+@media all and (max-width: 705px) {
+    .hyeta {
+        display: none;
+    }
+
+    .chlen {
+        display: block;
+    }
+
+    .ASS {
+        display: block;
+    }
+
+    .text h1 {
+        font-size: 25px ;
+    }
+
+    .text p {
+        font-size: 21px !important;
+    }
+
+    .htr {
+        height: auto;
+    }
+
+    .hlt {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
 @media all and (max-width: 700px) {
     .footer_Active h3 {
         font-size: 13px;
@@ -398,9 +624,21 @@
     #back-top {
         bottom: 50px;
     }
+
+    .btn {
+        bottom: -60%
+    }
 }
 
 @media all and (max-width: 600px) {
+
+    .btn {
+        bottom: -65%
+    }
+
+    .intro-courses {
+        font-size: 44px;
+    }
 
     .icons {
         font-size: 29px;
@@ -462,9 +700,60 @@
     .BigBen {
         margin-top: 20px;
     }
+
+    .dropdown-el {
+        font-size: 22px;
+    }
+}
+
+@media (max-width: 550px) {
+    .btn {
+        bottom: -70%;
+    }
+
+    .decor {
+        max-width: 350px;
+        max-height: 550px;
+    }
+
+    .radio {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .ball {
+        height: 20px !important;
+        width: 20px !important;
+        left: 20px;
+        top: 20px;
+    }
+
+    .ball.pos1 {
+        transform: translateY(60px);
+    }
+
+    .ball.pos2 {
+        transform: translateY(120px);
+    }
+    
+    .ball.pos3 {
+        transform: translateY(180px);
+    }
+    
+    .label {
+        padding: 10px 0;
+    }
+    
+    .form-inner input[type="submit"] {
+        margin-top: 0;
+    }
 }
 
 @media (max-width: 500px) {
+
+    .intro-courses {
+        font-size: 35px;
+    }
 
     .header__logo {
         font-size: 35px;
@@ -520,6 +809,22 @@
     .Develop__Advance__Achieve {
         font-size: 21px;
     }
+
+    .btn {
+        bottom: -80%;
+    }
+    
+    .circle {
+        display: none;
+    }
+    
+    .form-left-decoration {
+        display: none;
+    }
+    
+    .form-right-decoration {
+        display: none;
+    }
 }
 
 @media (max-width: 450px) {
@@ -550,6 +855,7 @@
 
     .forms__php {
         width: 100%;
+        height: 360px;
     }
 
     .footer_Active h3 {
@@ -599,6 +905,59 @@
     .qew p {
         font-size: 14.5px;
     }
+
+    .dropdown-el {
+        font-size: 20px;
+    }
+
+    .btn {
+        bottom: -90%;
+    }
+    
+    .decor {
+        max-width: 300px;
+        max-height: 500px;
+    }
+
+    .radio {
+        height: 40px !important;
+        width: 40px !important;
+    }
+
+    .ball {
+        height: 20px !important;
+        width: 20px !important;
+        left: 20px;
+        top: 20px;
+    }
+
+    .ball.pos1 {
+        transform: translateY(60px);
+    }
+
+    .ball.pos2 {
+        transform: translateY(120px);
+    }
+    
+    .label {
+        padding: 9px 0;
+    }
+    
+    .labels {
+        width: 90%;
+    }
+    
+    .label:last-child {
+        padding: 16px 0;
+    }
+    
+    .form-inner {
+    padding: 20px 40px 40px 40px;
+}
+    
+    .form__input {
+        line-height: 37px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -612,6 +971,38 @@
 
     #map {
         width: 90%;
+    }
+
+    .btn {
+        bottom: -100%;
+    }
+
+    .intro-courses {
+        font-size: 32px;
+    }
+    
+    .text p {
+        font-size: 18px !important;
+    }
+
+    .text h1 {
+        font-size: 23px;
+    }
+    
+    .mnhgj {
+        margin-top: 450px;
+    }
+}
+
+@media all and (max-width: 360px) {
+
+    .IMG_US {
+        width: 320px;
+    }
+
+    .eq {
+        width: 320px;
+        height: 550px;
     }
 }
 
@@ -682,9 +1073,39 @@
         font-size: 19px;
         line-height: 30px
     }
+
+    .dropdown-el {
+        font-size: 17px;
+    }
+
+    .btn {
+        bottom: -110%;
+    }
+
+    .intro-courses {
+        font-size: 31px;
+    }
+}
+
+@media (max-width: 352px) {
+    .intro-courses {
+        font-size: 30px;
+    }
+
+    .btn {
+        bottom: -115%;
+    }
+
+    .intro-course__main__title {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 340px) {
+    .intro-courses {
+        font-size: 27px;
+    }
+
     .courses__language.BHO {
         background-position: 145% 55px;
         background-size: 120px 100px;
@@ -702,11 +1123,23 @@
     .courses__language.ukraine {
         background-position: 140% 44px;
     }
+
+    .btn {
+        bottom: -120%;
+    }
+    
+    .text h1 {
+        font-size: 20px;
+    }
+
+    .text p {
+        font-size: 16px !important;
+    }
 }
 
 @media (max-width :325px) {
     .courses__language {
-        font-size: 10.5px;
+        font-size: 11px;
     }
 
     .courses__language.BHO {
@@ -715,13 +1148,36 @@
     }
 
     .courses__language.ukraine {
-        background-position: 144--% 44px;
+        background-position: 144% 44px;
     }
 
     .Develop__Advance__Achieve {
         font-size: 16px;
     }
+
+    .courses__language {
+        padding-bottom: 60px;
+    }
+
+    .btn {
+        bottom: -125%;
+    }
+
+    .intro-course__main__title {
+        font-size: 18px;
+    }
+
 }
 
+@media all and (max-width: 320px) {
+    .IMG_US {
+        width: 100%;
+    }
+
+    .eq {
+        width: 100%;
+        height: 480px;
+    }
+}
 
 /*481px and 767px*/

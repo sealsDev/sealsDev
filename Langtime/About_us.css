@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.About___us {
+    width: 100%;
+    height: 100%;
+
+}
+
+.ASS {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.eq {
+    width: 400px;
+    height: 600px;
+}
+
+.IMG_US {
+    width: 400px;
+}
+
+.IMG_TEXT {
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    width: 100%;
+    font-family: 'Exo 2';
+    background-image: url(image/00s.jpg);
+    height: 100%;
+}
+
+.tyman {
+    background: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    padding-top: 1px;
+}
+
+.text {
+    width: auto;
+    text-align: initial;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0px 9px 1px 20px;
+}
+
+.text_left {
+    width: auto;
+    text-align: initial;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0px 9px 1px 20px;
+}
+
+.Surname {
+    margin: 0;
+    display: flex;
+    margin-right: 250px;
+    justify-content: center;
+}
+
+.Name {
+    display: flex;
+    justify-content: center;
+}
+
+.patronymic {
+    display: flex;
+    justify-content: center;
+    margin-left: 330px;
+}
+
+
+
+.Surname_2 {
+    margin: 0;
+    display: flex;
+    margin-left: 250px;
+    justify-content: center;
+}
+
+
+.patronymic_2 {
+    display: flex;
+    justify-content: center;
+    margin-right: 330px;
+}
+
+.chlen {
+    display: none;
+}
+
+.htr {
+    height: 600px;
+    width: 100%;
+}

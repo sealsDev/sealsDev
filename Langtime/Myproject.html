@@ -20,19 +20,19 @@
     <link rel="stylesheet" href="Myproject.css">
     <link rel="stylesheet" href="adaptation.css">
     <link rel="stylesheet" href="include/burger/borger.css">
-    <link rel="stylesheet" href="lib/flickity/flickity.min.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
 
-    <script src="lib/flickity/flickity.pkgd.min.js"></script>
 
 
+<!--
     <link href="lib/jQueryFormStyler-master/dist/jquery.formstyler.css" rel="stylesheet" />
     <link href="lib/jQueryFormStyler-master/dist/jquery.formstyler.theme.css" rel="stylesheet" />
+-->
     <script src="https://kit.fontawesome.com/5f91e8f041.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
     <meta name="viewport" content="width=device-width,  height=device-height, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="lib/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>
+<!--    <script src="lib/jQueryFormStyler-master/dist/jquery.formstyler.min.js"></script>-->
     <!--
     <script>
         (function($) {
@@ -56,8 +56,7 @@
                         <li><a class="header__link">Курсы</a>
                             <ul class="submenu">
                                 <li><a class="header__link" href="">Немецкий</a></li>
-                                <li><a class="header__link" href="">Французкий</a></li>
-                                <li><a class="header__link" href="">Украинский</a></li>
+                                <li><a class="header__link" href="Courses_ukr.html">Украинский</a></li>
                                 <li><a class="header__link sub_eng">Английский</a>
                                     <ul class="submenu__eng">
                                         <li><a class="header__link" href="Courses_Eng_teenager.html">Взрослый</a></li>
@@ -67,7 +66,7 @@
                             </ul>
                         </li>
                         <li><a class="header__link" href="#slider">О нас</a></li>
-                        <li><a class="header__link" href="#miracle">Контакты</a></li>
+                        <li><a class="header__link" href="#miracle" id="scrollToAboutUs">Контакты</a></li>
                     </ul>
                 </nav>
             </div>
@@ -108,8 +107,7 @@
 
                         <ul class="burger-submenu clas burger-menu__hidden__link" id="hgfks">
                             <li><a class="burger-menu__link_sub" href="">Немецкий</a></li>
-                            <li><a class="burger-menu__link_sub" href="">Французкий</a></li>
-                            <li><a class="burger-menu__link_sub" href="">Украинский</a></li>
+                            <li><a class="burger-menu__link_sub" href="Courses_ukr.html">Украинский</a></li>
                             <li>
 
                                 <label for="hider2" style="cursor: pointer;position: relative;width: 100%;">
@@ -137,8 +135,7 @@
 
 
         <div class="main-lock">
-
-
+           <div class="main-lock__inner">
             <!--
             <script>
                 $("window").load(function() {
@@ -154,13 +151,11 @@
                 <h2 class="crow__title">Мы – это новая, современная школа иностранных языков.</h2>
             </div>
             <div class="absolute__fix" id="goToForm">
-                <div class="b-ff-cross-header__right">
                     <button class="b-ff-cross-header__button b-ff-cross-header__button_blue go-to-order-form" type="button">
                         <a style="color: white; text-decoration: none;" href="#forms__php" id="goToFormLink">Оставить заявку</a>
                     </button>
-                </div>
             </div>
-
+</div>
         </div>
 
         <div class="Courses">
@@ -227,145 +222,61 @@
             </div>
         </div>
 
+       
+       
         <div class="About__Us">
+<!--        TEACHER IMAGE START           -->
 
-            <!------------------SLIDER-------------------------------------->
+<div class="teacher__image" aria-haspopup="true">
+                <figure class="snip1401" id="teach1">
+                    <img src="image/11.png" alt="sample87" />
+                    <figcaption>
+                        <h3>Докаленко Алена</h3>
+                        <p>Руководитель, преподаватель английского языка, украинского языка и литературы</p>
+                    </figcaption>
 
-            <div class="slide--parent" id="slider">
+                </figure>
+                <figure class="snip1401" id="teach2">
+                    <img src="image/IMG_9431.JPG" alt="sample67" />
+                    <figcaption>
+                        <h3>Докаленко Анастасия</h3>
+                        <p>Преподаватель английского и украинского языков</p>
+                    </figcaption>
 
-                <div class="parent--el">
-                    <a id="first-link"></a>
-                    <div class="two--col">
-                        <div class="is-item has--img">
-                            <figure class="the-img">
-                                <img src="image/IMG_9432.JPG" alt="">
-                            </figure>
-                        </div>
-                        <div class="is-item has--content">
-                            <div class="is-item--inner">
-                                <h1><span>Докаленко Алена Александровна</span></h1>
-                                <small>Руководитель, преподаватель английского языка, украинского языка и
-                                    литературы</small>
-                                <hr>
-                                <p>Алёна Александровна - преподаватель, который относится к каждому ребёнку, как к
-                                    своему.
-                                    Она никогда не останется в стороне, если увидит, что человеку нужна помощь.
-                                    Педагог умеет сделать самые сложные вещи простыми. </p>
-                                <p>Она не обременяет студентов непонятными правилами и терминами, её объяснения всегда
-                                    лаконичны и красочны,
-                                    а примеры - жизненны, благодаря чему материал усваивается в разы легче. </p>
-                                <p>Студенты любят преподавателя не только за профессионализм, но ещё и за её чуткость:
-                                    каждый ученик нашей школы знает, что с любой проблемой он может обратиться к Алёне
-                                    Александровне - она всегда выслушает,
-                                    поддержит и поможет!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </figure>
+                <figure class="snip1401" id="teach3">
+                    <img src="image/IMG_9430.JPG" alt="sample87" />
+                    <figcaption>
+                        <h3>Воронюк Ксения</h3>
+                        <p>Преподаватель английского и немецкого языков</p>
+                    </figcaption>
 
-                <div class="parent--el">
-                    <div class="two--col">
-                        <div class="is-item has--img">
-                            <figure class="the-img">
-                                <img src="image/IMG_9430.JPG" alt="">
-                            </figure>
-                        </div>
-                        <div class="is-item has--content">
-                            <div class="is-item--inner">
-                                <h1><span>Воронюк Ксения Викторовна</span></h1>
-                                <small>Преподаватель английского и немецкого языков</small>
-                                <hr>
-                                <p>Ксения Викторовна - человек-эмоция, её искренностью и самоотдачей восхищаются все:
-                                    детки чувствуют тепло и доброту, которые исходят от нее, и с радостью бегут на
-                                    занятия.</p>
-                                <p>Подростки знают о её способности разглядеть в каждом из них индивидуальность и
-                                    прилагают все усилия, дабы оправдать ожидания Ксении Викторовны.</p>
-                                <p>Преподаватель находится в постоянном поиске новых идей и подходов к обучению, что
-                                    позволяет сделать каждое занятие максимально эффективным!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </figure>
+                
+                <figure class="snip1401" id="teach4">
+                    <img src="image/IMG_2145.JPG" alt="sample87" />
+                    <figcaption>
+                        <h3 style="font-size: 1.31em;">Василькова Александра</h3>
+                        <p>Преподаватель украинского языка и литературы, английского языка</p>
+                    </figcaption>
+                </figure>
+                
+                <figure class="snip1401 hover" id="teach5">
+                    <img src="image/IMG_9428.JPG" alt="sample93" />
+                    <figcaption>
+                        <h3>Мельник Элианна</h3>
+                        <p>Преподаватель английского языка</p>
+                    </figcaption>
 
-                <div class="parent--el">
-                    <div class="two--col">
-                        <div class="is-item has--img">
-                            <figure class="the-img">
-                                <img src="image/IMG_9428.JPG" alt="">
-                            </figure>
-                        </div>
-                        <div class="is-item has--content">
-                            <div class="is-item--inner">
-                                <h1><span>Мельник Элианна Витальевна</span></h1>
-                                <small>Преподаватель английского языка</small>
-                                <hr>
-                                <p>Элианна Витальевна - педагог, который сочитает в себе любовь к детям, языку и
-                                    творчеству. С ней Вы узнаете, насколько неординарным может быть процесс обучения,
-                                    сколько возможностей практиковать язык ежедневно у Вас есть! </p>
-                                <p>Преподаватель на собственном примере покажет и докажет, что изучение английского -
-                                    это стиль жизни, это воронка, которая затягивает раз и навсегда! </p>
-                                <p>Элианна Витальевна поможет создать прекрасную базу для дальнейшего изучения языка,
-                                    поставить конкретную цель (к примеру, владение языком на уровне В2) и достичь её!
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="parent--el">
-                    <div class="two--col">
-                        <div class="is-item has--img">
-                            <figure class="the-img">
-                                <img src="image/IMG_9431.JPG" alt="">
-                            </figure>
-                        </div>
-                        <div class="is-item has--content">
-                            <div class="is-item--inner">
-                                <h1><span>Докаленко Анастасия Александровна</span></h1>
-                                <small>Преподаватель английского и украинского языков</small>
-                                <hr>
-                                <p>Анастасия Александровна обладает уникальной способностью найти подход как к малышам,
-                                    так и к подросткам. Она умеет и посмеяться вместе со студентами, и наругать, когда
-                                    это необходимо. </p>
-                                <p>Благодаря постоянному профессиональному развитию преподавателя, её уроки всегда
-                                    динамичны и разнообразны. Для педагога не существует фраз "не могу" и "у меня не
-                                    получится". </p>
-                                <p>Анастасия Александровна поможет каждому студенту поверить в себя и свои силы, научит
-                                    не сдаваться ни при каких трудностях; именно с ней Вы раскроете свой потенциал!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="parent--el">
-                    <div class="two--col">
-                        <div class="is-item has--img">
-                            <figure class="the-img">
-                                <img src="image/IMG_2145.JPG" alt="">
-                            </figure>
-                        </div>
-                        <div class="is-item has--content">
-                            <div class="is-item--inner">
-                                <h1><span>Василькова Александра Игоревна</span></h1>
-                                <small>Преподаватель украинского языка и литературы, английского языка</small>
-                                <hr>
-                                <p>Имея 6-летний опыт преподавания за плечами, Александра Игоревна чувствует все
-                                    потребности студентов до мельчайших деталей. </p>
-                                <p>Она знает, как сделать процесс обучения наиболее продуктивным и достичь максимальных
-                                    результатов в кратчайшие сроки. Целевая аудитория педагога - подростки и взрослые.
-                                </p>
-                                <p>Благодаря собственному опыту и множеству пройденных треннингов Александра Игоревна
-                                    успешно готовит студентов к сдаче ВНО и международных экзаменов. Она умеет выделять
-                                    главное и учит этому своих подопечных!</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                </figure>
             </div>
 
-            <!-----------------END-SLIDER-------------------------------------->
+<!--        TEACHER IMAGE END             -->
+            
+            
         </div>
+        
+        
         <div class="timetable" id="miracle">
             <div class="map">
                 <div id="map">
@@ -394,7 +305,7 @@
                     <div class="form">
                         <input type="text" name="name" autocomplete="off" required>
                         <label for="name" class="label-name">
-                            <span class="content-name">name</span>
+                            <span class="content-name">Name</span>
                         </label>
                     </div>
 
@@ -408,32 +319,35 @@
                     <div class="form">
                         <input type="text" name="name" autocomplete="off" required>
                         <label for="name" class="label-name">
-                            <span class="content-name">phone</span>
+                            <span class="content-name">Phone</span>
                         </label>
                     </div>
 
                     <div class="form">
                         <input type="text" name="name" autocomplete="off" required>
                         <label for="name" class="label-name">
-                            <span class="content-name">email</span>
+                            <span class="content-name">Email</span>
                         </label>
                     </div>
 
+<!--
                     <div style="display: flex;
                        justify-content: center;
                        margin: 30px auto;">
-                        <span class="dropdown-el">
+                        
+                    </div>
+-->
+                    <div class="dropdown-el" >
                         <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance"><label for="sort-relevance">Выберите предмет</label>
                         <input type="radio" name="sortType" value="Popularity" id="sort-best"><label for="sort-best">Английский</label>
                         <input type="radio" name="sortType" value="PriceIncreasing" id="sort-low"><label for="sort-low">Немецкий</label>
                         <input type="radio" name="sortType" value="PriceDecreasing" id="sort-high"><label for="sort-high">Французкий</label>
                         <input type="radio" name="sortType" value="ProductBrand" id="sort-brand"><label for="sort-brand">Украинский</label>
-                    </span>
                     </div>
 
-                    <button type="submit" class="b-ff-cross-header__button b-ff-cross-header__button_blue go-to-order-form">Отправить
+               
+                          <button type="submit" class="b-ff-cross-header__button b-ff-cross-header__button_blue go-to-order-form mnb">Отправить
                         заявку</button>
-
                 </form>
             </div>
         </div>
@@ -494,11 +408,15 @@
         <!--        <?php include 'footer/footer.php'; ?>-->
         <script src="lib/js/map.js"></script>
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATgF7xPpaEiWd3Qwx9aZt8NoasKWu58r4&callback=initMap"></script>
-        <script src="lib/js/anchor.js"></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-        <script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script>
+<!--        <script src="lib/js/anchor.js"></script>-->
+<!--        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>-->
+<!--        <script src='https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js'></script>-->
+<!--
         <script src="lib/js/slider.js"></script>
         <script src="lib/js/borger.js"></script>
+-->
+<!--  <script src="lib/js/app.js"></script>-->
+   <script src="lib/js/mainApp.js"></script>
     </div>
 </body>
 
