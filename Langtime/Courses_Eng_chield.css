@@ -23,9 +23,11 @@ a {
 
 .Starter {
     width: 100%;
+    /*
     height: -webkit-max-content;
     height: -moz-max-content;
     height: max-content;
+*/
 }
 
 .wrap-information {
