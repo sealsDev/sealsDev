@@ -136,7 +136,32 @@ function scrollTop() {
         }
     }
   }
+
+  function teacherImg() {
+
+    let teacherItem = document.querySelectorAll('.snip1402');
+    let teachDesc = document.getElementById('teachDesc');
+    let teachMobile = document.getElementById('teachMobile');
+
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent)) {
+        teachDesc.style.display = 'none';
+        teachMobile.style.display = 'block';
+
+        teacherItem.forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('hover');
+            });
+        });
+
+        alert("Вы используете мобильное устройство (телефон или планшет).");
+
+    } else {
+        teachDesc.style.display = 'block';
+        alert("Вы используете ПК.");
+    }
+  }
   
+  teacherImg();
   burgerMenu('.burger-menu');
   scrollToAnchor();
   scrollTop();
