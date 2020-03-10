@@ -16,10 +16,22 @@
 <html lang="ru">
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-160185901-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-160185901-1');
+    </script>
     <title>Школа иностранных языков langtime</title>
-    <link rel="stylesheet" href="Myproject.css">
-    <link rel="stylesheet" href="adaptation.css">
-    <link rel="stylesheet" href="include/burger/borger.css">
+    <link rel="stylesheet" type="text/css" href="Myproject.css">
+    <link rel="stylesheet" type="text/css" href="adaptation.css">
+    <link rel="stylesheet" type="text/css" href="include/burger/borger.css">
     <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5f91e8f041.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="image/favicon.ico" type="image/x-icon">
@@ -205,9 +217,9 @@
 
 
 
-<!--           TEACHER DESCTOP START             -->
+        <!--           TEACHER DESCTOP START             -->
 
-<div class="About__Us" id="teachDesc">
+        <div class="About__Us" id="teachDesc">
             <!--        TEACHER IMAGE START           -->
 
             <div class="teacher__image" aria-haspopup="true">
@@ -259,11 +271,11 @@
 
         </div>
 
-<!--           TEACHER DESCTOP END            -->
+        <!--           TEACHER DESCTOP END            -->
 
-<!--           TEACHER MOBILE START             -->
+        <!--           TEACHER MOBILE START             -->
 
-<div class="About__Us" id="teachMobile" style="display: block;">
+        <div class="About__Us" id="teachMobile" style="display: block;">
             <!--        TEACHER IMAGE START           -->
 
             <div class="teacher__image" aria-haspopup="true">
@@ -315,7 +327,7 @@
 
         </div>
 
-<!--           TEACHER MOBILE END            -->
+        <!--           TEACHER MOBILE END            -->
 
 
         <div class="timetable" id="miracle">
@@ -370,7 +382,7 @@
                             <span class="content-name">Email</span>
                         </label>
                     </div>
-                    
+
                     <div class="dropdown-el">
                         <input type="radio" name="sortType" value="Relevance" checked="checked" id="sort-relevance"><label for="sort-relevance">Выберите предмет</label>
                         <input type="radio" name="sortType" value="Popularity" id="sort-best"><label for="sort-best">Английский</label>
@@ -443,6 +455,4 @@
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATgF7xPpaEiWd3Qwx9aZt8NoasKWu58r4&callback=initMap"></script>
         <script src="lib/js/mainApp.js"></script>
     </div>
-</body>
-
-</html>
+</body></html>
