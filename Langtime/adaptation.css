@@ -255,6 +255,7 @@
 
     .intro-crs {
         max-width: 100%;
+        height: auto;
     }
 
     #back-top {
