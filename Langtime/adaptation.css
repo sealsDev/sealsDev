@@ -15,11 +15,11 @@
         font-size: 53px;
     }
 
-    ..b-ff-cross-header__button_blue {
+    .b-ff-cross-header__button_blue {
         padding: 15px 30px;
     }
 
-    ..b-ff-cross-header__button {
+    .b-ff-cross-header__button {
         font-size: 29px;
     }
 }
@@ -233,6 +233,8 @@
 
     .Starter {
         margin-top: 400px;
+        max-height: 100%;
+        max-width: 100%;
     }
 
     .Starter:first-child {
