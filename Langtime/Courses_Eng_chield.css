@@ -752,7 +752,7 @@ footer {
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
     opacity: 0;
-    -webkit-backface-visibility: hidden;
+    /* -webkit-backface-visibility: hidden; */
     /* ideally, transition speed should match zoom duration */
     -webkit-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
