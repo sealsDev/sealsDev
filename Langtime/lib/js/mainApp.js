@@ -157,6 +157,7 @@ function scrollTop() {
 
     } else {
         teachDesc.style.display = 'block';
+        teachMobile.style.display = 'none';
         alert("Вы используете ПК.");
     }
   }
