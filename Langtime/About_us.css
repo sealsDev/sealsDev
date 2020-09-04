@@ -31,6 +31,8 @@ body {
     width: 100%;
     font-family: 'Exo 2';
     background-image: url(image/00s.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 100%;
 }
 
