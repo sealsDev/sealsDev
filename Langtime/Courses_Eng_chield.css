@@ -149,40 +149,33 @@ a {
 }
 
 .btn {
-    display: inline-block;
-    padding: 12px 40px;
-    border-radius: 30px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1);
-    box-shadow: 5px 20px 50px rgba(0, 0, 0, 0.1);
-    position: relative;
-    z-index: 1;
-    font-size: 16px;
-    font-family: "Lato", sans-serif;
-    font-weight: 700;
-    line-height: 22px;
-    color: #fff;
-    letter-spacing: 1px;
-    -webkit-transition: .2s linear;
-    transition: .2s linear;
+  text-decoration: none;
+  outline: none;
+  display: inline-block;
+  width: 140px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 45px;
+  margin: 10px 20px;
+  font-family: 'Arial Black', sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: 600;
+  color: #524f4e;
+  background: white;
+  box-shadow: 0 8px 15px rgba(0,0,0,.1);
+  border: 1px solid black;
+  transition: .3s;
+  letter-spacing: 1.5px;
 }
-
-.btn--blue {
-    background: -webkit-gradient(linear, left top, right top, from(#134ACA), color-stop(30%, #13BDCA), color-stop(70%, #3EB0CE), to(#134ACA));
-    background: linear-gradient(to right, #134ACA 0%, #13BDCA 30%, #3EB0CE 70%, #134ACA 100%);
-}
-
 .btn:hover {
-    color: red;
+  background: dodgerblue;
+  box-shadow: 0 15px 20px rgba(30,144,255,.4);
+  color: white;
+  transform: translateY(-7px);
 }
-
-.btn--blue:hover {
-    background: #fff;
-    -webkit-box-shadow: 0px 0px 10px black;
-    box-shadow: 0px 0px 10px black;
-}
-
 
 
 
@@ -735,7 +728,7 @@ footer {
 
 .form-inner input[type="submit"]:hover {
     background: rgba(30, 125, 214, 0.7);
-    border-color: rgba(30, 125, 214, 0.7);
+    border-color: rgba(30, 125, 214, -0.3);
 }
 
 .form-inner textarea {

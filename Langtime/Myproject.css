@@ -927,6 +927,7 @@ header {
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;
+    margin-right: 20px;
 }
 
 #back-top {
@@ -1031,6 +1032,7 @@ footer {
     background-size: cover;
     width: 100%;
     background-image: url(image/foot_bg.jpg);
+/*    background: #000;-*/
     background-repeat: no-repeat;
     background-position: center top;
     display: inline-block;

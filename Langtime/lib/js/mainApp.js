@@ -153,15 +153,12 @@ function scrollTop() {
             });
         });
 
-        alert("Вы используете мобильное устройство (телефон или планшет).");
-
     } else {
         teachDesc.style.display = 'block';
         teachMobile.style.display = 'none';
-        alert("Вы используете ПК.");
     }
   }
-  
+
   teacherImg();
   burgerMenu('.burger-menu');
   scrollToAnchor();
